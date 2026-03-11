@@ -83,7 +83,7 @@ CI/CD / Deployment
 
 Frontend deployed on Render at: https://sales-insight-frontend-seg5.onrender.com/
 
-Backend deployed on Render at: https://sales-insight-automator-1-oxnn.onrender.com/
+Backend deployed on Render at: https://sales-insight-automator-1-oxnn.onrender.com/docs
 
 Docker used to build images locally or for cloud deployment.
 

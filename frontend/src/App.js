@@ -12,14 +12,17 @@ function App() {
     }
 
     const formData = new FormData();
+    const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://127.0.0.1:8000";
     formData.append("file", file);
     formData.append("email", email);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/upload", {
-        method: "POST",
-        body: formData,
-      });
+      
+
+const res = await fetch(`${backendUrl}/upload`, {
+  method: "POST",
+  body: formData,
+});
 
       if (!res.ok) {
         const text = await res.text();
